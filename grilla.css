@@ -1,0 +1,49 @@
+.grilla{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+section{
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.intro .grilla{
+    background-color: darksalmon;
+    border-radius: 2em;
+    padding: 2em;
+    text-align: center;
+}
+
+.imggato {
+    border-radius: 1em;
+}
+
+.titulo{
+    grid-column-end: span 6;
+}
+.tarjeta{
+    box-shadow: var(darksalmon) 0 0 2em;
+    border-radius: 2em;
+    grid-column-end: span 4;
+    padding: em;
+    text-align: center;
+}
+
+.tarjeta .imggato{
+    border-radius: 50%;
+    max-width: 10em;
+}
+
+@media (max-width: 48rem)
+{/*celulares */ 
+    .grilla > *{
+        grid-column-end: span 12;
+    }
+    .grilla{
+        gap: 2em 0;
+    }
+    h1 {font-size: 3rem;}
+}
